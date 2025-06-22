@@ -1,4 +1,5 @@
 import ArticleCard from "@/app/articles/components/article-card";
+import { DEFAULT_GET_LIMIT } from "@/constants";
 import { getArticles } from "@/db/client";
 import { Metadata, NextPage } from "next";
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const Page: NextPage = async () => {
-	const articles = await getArticles();
+	const articles = await getArticles({ offset: 0, limit: DEFAULT_GET_LIMIT });
 
 	return (
 		<div>

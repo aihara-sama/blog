@@ -39,6 +39,10 @@ export default function RootLayout({
             gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
           `}
 				</Script>
+				<meta
+					name="google-site-verification"
+					content="PoVC8RbfHzidVnqI6shz1YWSb7rYwf6J6583QkN-F5I"
+				/>
 			</head>
 			<body className={`${sevillana.className} antialiased`}>
 				<Header />

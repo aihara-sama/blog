@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://blog.vercel.app
+Host: https://blog-theta-snowy-89.vercel.app
 
 # Sitemaps
-Sitemap: https://blog.vercel.app/sitemap.xml
+Sitemap: https://blog-theta-snowy-89.vercel.app/sitemap.xml

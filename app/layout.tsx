@@ -1,12 +1,12 @@
 import Header from "@/app/components/layout/header";
 import type { Metadata } from "next";
-import { Roboto_Slab } from "next/font/google";
+import { Merriweather } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const robotoSlab = Roboto_Slab({
+const sevillana = Merriweather({
 	subsets: ["latin"],
-	weight: ["300", "400", "500", "700"],
+	weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -40,9 +40,9 @@ export default function RootLayout({
           `}
 				</Script>
 			</head>
-			<body className={`${robotoSlab.className} antialiased`}>
+			<body className={`${sevillana.className} antialiased`}>
 				<Header />
-				<main className="max-w-[1280px] mx-auto pt-16 px-6">{children}</main>
+				<main className="max-w-[1280px] mx-auto pt-10 px-6">{children}</main>
 			</body>
 		</html>
 	);

@@ -1,3 +1,4 @@
+import Header from "@/app/components/layout/header";
 import type { Metadata } from "next";
 import { Roboto_Slab } from "next/font/google";
 import Script from "next/script";
@@ -39,7 +40,10 @@ export default function RootLayout({
           `}
 				</Script>
 			</head>
-			<body className={`${robotoSlab.className} antialiased`}>{children}</body>
+			<body className={`${robotoSlab.className} antialiased`}>
+				<Header />
+				<main className="max-w-[1280px] mx-auto pt-16 px-6">{children}</main>
+			</body>
 		</html>
 	);
 }

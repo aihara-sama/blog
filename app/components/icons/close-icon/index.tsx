@@ -1,0 +1,32 @@
+import { PropsWithClassName } from "@/types/props";
+import clsx from "clsx";
+import type { FunctionComponent } from "react";
+
+interface Props {
+	interactive?: boolean;
+	onClick?: () => void;
+}
+
+const CloseIcon: FunctionComponent<PropsWithClassName<Props>> = ({
+	className = "",
+	interactive = false,
+	onClick,
+}) => {
+	return (
+		<svg
+			onClick={onClick}
+			className={`${className} ${clsx(interactive && "group cursor-pointer")}`}
+			viewBox="0 0 32 32"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M0.894559 0.894559C1.46752 0.321773 2.24451 0 3.05468 0C3.86484 0 4.64184 0.321773 5.2148 0.894559L16.0184 11.6982L26.8221 0.894559C27.3983 0.338006 28.1701 0.030046 28.9712 0.0370073C29.7723 0.0439686 30.5386 0.365295 31.1051 0.931778C31.6716 1.49826 31.9929 2.26458 31.9999 3.06567C32.0068 3.86677 31.6989 4.63856 31.1423 5.2148L20.3387 16.0184L31.1423 26.8221C31.6989 27.3983 32.0068 28.1701 31.9999 28.9712C31.9929 29.7723 31.6716 30.5386 31.1051 31.1051C30.5386 31.6716 29.7723 31.9929 28.9712 31.9999C28.1701 32.0068 27.3983 31.6989 26.8221 31.1423L16.0184 20.3387L5.2148 31.1423C4.63856 31.6989 3.86677 32.0068 3.06567 31.9999C2.26458 31.9929 1.49826 31.6716 0.931778 31.1051C0.365295 30.5386 0.0439686 29.7723 0.0370073 28.9712C0.030046 28.1701 0.338006 27.3983 0.894559 26.8221L11.6982 16.0184L0.894559 5.2148C0.321773 4.64184 0 3.86484 0 3.05468C0 2.24451 0.321773 1.46752 0.894559 0.894559Z"
+				fill="#172554"
+				className="group-hover:fill-blue-500"
+			/>
+		</svg>
+	);
+};
+
+export default CloseIcon;

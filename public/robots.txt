@@ -8,3 +8,4 @@ Host: https://blog-theta-snowy-89.vercel.app
 # Sitemaps
 Sitemap: https://blog-theta-snowy-89.vercel.app/sitemap.xml
 Sitemap: https://blog-theta-snowy-89.vercel.app/sitemap-1.xml
+Sitemap: https://blog-theta-snowy-89.vercel.app/sitemap1.xml
